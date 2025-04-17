@@ -10,7 +10,7 @@ Neither of the below works:
 ```
 hre.run('verify:verify', ...)
 
-npx hardhat verify 0x4bc819117D6bDcc1696C25b7aa8660b53CEc555C --network monad-testnet
+npx hardhat verify CONTRACT_ADDRESS --network monad-testnet
 ```
 
 Fails with this:
@@ -22,6 +22,14 @@ I modified the sample provided from the contract withard (https://docs.openzeppe
 ```
 Sourcify:
 The contract you want to verify was compiled with solidity 0.8.20, but your configured compiler version is: 0.8.22.
+```
+
+# Reproduction
+
+Replace YOUR_PK_HERE in hardhat.config.ts
+```
+npm i
+npx hardhat run --network monad-testnet scripts/deploy.ts
 ```
 
 
