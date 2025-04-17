@@ -1,6 +1,8 @@
 # Monad problem
 
-When trying to verify using the official instructions, the process fails.
+Contracts without proxy get verified fine. But contracts behind a proxy don't get verified no matter what I tried.
+
+When trying to verify an Upgradeable contract using the official instructions, the process fails.
 - Openzeppelin Upgradeable Verification: https://docs.openzeppelin.com/upgrades-plugins/api-hardhat-upgrades#verify
 - Monad verification guide: https://docs.monad.xyz/guides/verify-smart-contract/hardhat
 
